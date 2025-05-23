@@ -3,7 +3,7 @@ import App from "../App";
 import Home from "../components/Home/Home";
 import About from "../components/About/About";
 import Contact from "../components/Contact/Contact";
-import Github from "../components/Github/Github";
+import Github, { githubInfoLoader } from "../components/Github/Github";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +25,7 @@ const router = createBrowserRouter([
       {
         path: "github",
         element: <Github />,
+        loader: githubInfoLoader,
       },
     ],
   },
