@@ -1,8 +1,11 @@
+import { UserProvider } from "../context/context.jsx";
+import Profile from "./components/profile.jsx";
+
 function App() {
   return (
-    <>
-      <div>hello world</div>
-    </>
+    <UserProvider>
+      <Profile />
+    </UserProvider>
   );
 }
 
