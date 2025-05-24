@@ -12,6 +12,7 @@ function Input() {
       isDone: false,
     };
     setTodos((prev) => [...prev, add]);
+    setNewTodo("");
   }
 
   return (
